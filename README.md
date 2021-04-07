@@ -5,3 +5,9 @@ For this Microhack, we're allowing you to build your own adventure. There's a nu
 2. Private Cluster
 3. NSGs and AKS
 4. Services, load balancer and internal load balancer
+
+To work with this hack, clone the github repository in Cloud Shell.
+
+```bash
+git clone https://github.com/NillsF/microhack-aks-networking.git
+```
