@@ -35,12 +35,12 @@ aksVnetId=$(az network vnet show -n $aksVnetName \
   -g $nodeResourceGroup -o tsv --query "id")
 
 az network vnet peering create \
-  -n AppGWtoAKSVnetPeering -g agic \
+  -n AppGWtoAKSVnetPeering -g ingress-https \
   --vnet-name agic-vnet --remote-vnet $aksVnetId \
   --allow-vnet-access
 
 appGWVnetId=$(az network vnet show -n agic-vnet \
-  -g agic -o tsv --query "id")
+  -g ingress-https -o tsv --query "id")
 
 az network vnet peering create \
   -n AKStoAppGWVnetPeering -g $nodeResourceGroup \
