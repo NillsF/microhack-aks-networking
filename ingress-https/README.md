@@ -23,6 +23,8 @@ az network vnet create -n agic-vnet -g ingress-https \
 
 Once this VNET has been created, peer it with the AKS VNET.
 
+_Note: the command az network vnet list might be delayed in showing the VNET in the AKS resource group. If you run into issues with the commands below, be patient and try again after a minute._
+
 ```bash
 nodeResourceGroup=$(az aks show -n ingress-https \
   -g ingress-https -o tsv --query "nodeResourceGroup")
