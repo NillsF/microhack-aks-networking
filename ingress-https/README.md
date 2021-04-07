@@ -160,12 +160,12 @@ And now, you're ready to deploy an Ingress using HTTPS.
 
 First, you'll need to add your own DNS prefix to the ingress definition. To do this, use the following command:
 ```bash
-code ingress-with-tls.yam
+code ingress-with-tls.yaml
 ```
 
 Once that is saved, you can create that ingress using:
 ```bash
-kubectl create -f ingress-with-tls.yam
+kubectl create -f ingress-with-tls.yaml
 ```
 
 To follow the creation of the certificate, you can use the following command:
@@ -175,7 +175,7 @@ kubectl get certificate -w
 This should show you the certificate was issued after about 1 minute.
 For more details, you can use different kubectl commands, such as ```kubectl describe certificate``` and ```kubectl describe certificaterequest```
 
-Now, browse to your unique DNS name. You should get an invalid certificate warning (because you're using a staging server), but the website will be served over HTTPS.
+Now, browse to your unique DNS name. Please add HTTPS in front of the URL. You should get an invalid certificate warning (because you're using a staging server), but the website will be served over HTTPS.
 
 ## Step 6: cleanup
 

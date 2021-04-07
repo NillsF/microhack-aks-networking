@@ -17,8 +17,8 @@ spec:
             name: frontend
             port: 
               number: 80
-    host: <your dns>.westus2.cloudapp.azure.com
+    host: nfmicro.westus2.cloudapp.azure.com
   tls:
     - hosts:
-      - <your dns>.westus2.cloudapp.azure.com
+      - nfmicro.westus2.cloudapp.azure.com
       secretName: frontend-tls
