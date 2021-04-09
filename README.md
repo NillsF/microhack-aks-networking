@@ -3,8 +3,7 @@ For this Microhack, we're allowing you to build your own adventure. There's a nu
 
 1. Ingress and HTTPS using Let's Encrypt
 2. Private Cluster
-3. NSGs and AKS
-4. Services, load balancer and internal load balancer
+3. NSGs, ILB and AKS
 
 To work with this hack, clone the github repository in Cloud Shell.
 
